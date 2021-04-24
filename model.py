@@ -5,11 +5,11 @@ from sklearn.feature_selection import RFE
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import GradientBoostingClassifier,RandomForestClassifier
 from sklearn.model_selection import train_test_split
-#%%
+
 
 from sklearn.externals import joblib
 
-#%%
+
 df=pd.read_csv('train.csv')
 
 df.head(5)
@@ -60,15 +60,14 @@ rfc.fit(x_train,y_train)
 preds2=gbc.predict(x_test)
 score2=accuracy_score(y_test,preds2)
 
-#%%
+
 model = open("mobile_prcie_prediction.pkl","wb")
 joblib.dump(gbc,model)
 model.close()
 
 #75%
 
-#%%
+
 
 #so we will we using gradient boosting classifier for our 
 
-print(df[rfe_feature].columns)
