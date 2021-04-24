@@ -1,7 +1,7 @@
 # Machine_learning_web_apps
 #### Predicts the price range of mobile phones using python and streamlit
 
-#### The dataset has folloing features with target variable price_range ['Low','Medium','High','Very High']
+#### The dataset has following features with target variable price_range ['Low','Medium','High','Very High']
 'battery_power': 'Total energy a battery can store in one time measured in mAh',
 
 'blue': 'Has bluetooth or not',
@@ -38,4 +38,4 @@
 'talk_time': 'longest time that a single battery charge will last when you are',
 
 'three_g': 'Has 3G or not'
-'price_range':'Target Varibale'
+'price_range':'Target Varibale with labels[0,1,2,3]'
