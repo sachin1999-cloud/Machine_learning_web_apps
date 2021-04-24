@@ -12,11 +12,11 @@ import streamlit as st
 import warnings
 warnings.filterwarnings("ignore", category=FutureWarning)
 import matplotlib.pyplot as plt
-#%%
+
 from sklearn.externals import joblib
 import os
 
-#%%
+
 
 def load_dataset(path):
     df=pd.read_csv(path)
