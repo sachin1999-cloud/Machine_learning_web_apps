@@ -17,15 +17,16 @@ from sklearn.externals import joblib
 import os
 
 
-
+@st.cache
 def load_dataset(path):
     df=pd.read_csv(path)
     return df
+@st.cache
 def load_prediction_models(model_file):
 	loaded_model = joblib.load(open(os.path.join(model_file),"rb"))
 	return loaded_model
 
-
+@st.cache
 def main():
     st.title("Mobile Price Prediction App")
     st.subheader("Predicts the price range of smartphones using Python and Streamlit")
