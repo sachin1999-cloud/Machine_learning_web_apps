@@ -13,7 +13,7 @@ import warnings
 warnings.filterwarnings("ignore", category=FutureWarning)
 import matplotlib.pyplot as plt
 
-from sklearn.externals import joblib
+import joblib
 import os
 
 
